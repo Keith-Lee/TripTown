@@ -449,7 +449,6 @@
 		7ADC733F172122E4007D3384 = {
 			isa = PBXGroup;
 			children = (
-				7A89B626177E1BEF00B99AB4 /* RestKit.xcodeproj */,
 				7ADC7351172122E4007D3384 /* TripTown */,
 				7ADC7352172122E4007D3384 /* Supporting Files */,
 				7A94A791174FDF6A003AA95E /* Pictures */,
@@ -473,6 +472,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA6B62B174F44B9009982D6 /* libsqlite3.0.dylib */,
+				7A89B626177E1BEF00B99AB4 /* RestKit.xcodeproj */,
 				7A6A0094177CC88000261DC1 /* AddressBook.framework */,
 				7A94A78D174FDC6A003AA95E /* CoreImage.framework */,
 				CEA6B62D174F45E8009982D6 /* Accounts.framework */,

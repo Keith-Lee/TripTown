@@ -382,6 +382,16 @@
             NSLog(@"Image is not found , delete the Object");
             //假設我們找不到這個圖片，就表示user已從相簿刪除該像片，所以資料庫也要同步刪除
             //[self deleteDataModelObject:(PHOTO *)photo];
+            if([photo.location.photo count] == 1 && [photo.location.region.location count] == 1){
+                [self deleteDataModelObject:photo.location.region];
+            }
+            
+            else if([photo.location.photo count] == 1 && [photo.location.region.location count] > 1){
+                [self deleteDataModelObject:photo.location];
+            }
+            else{
+                [self deleteDataModelObject:photo];
+            }
         }
         else{
             [resultMutableArray addObject:image];

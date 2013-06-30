@@ -270,9 +270,11 @@
     
     else{
         
+        
+        DataAccess *da = [DataAccess sharedDataSource];
+        
         if(indexPath.section == 0){
             
-            DataAccess *da = [DataAccess sharedDataSource];
             
             TRIP *trip = (TRIP *)[ongoingTripArray objectAtIndex:indexPath.row];
             NSLog(@"trip is %@",trip.t_name);
@@ -314,10 +316,26 @@
         }
     
         else{
-            UIImage *image = [self getTheFirstImageForTrip: (TRIP *)[historyTripArray objectAtIndex:indexPath.row]];
-            cell.tripImageView.image = image;
         
             TRIP *trip = (TRIP *)[historyTripArray objectAtIndex:indexPath.row];
+            
+            NSArray *allPhotoArray = [da getAllPhotoForTrip:trip];
+            NSArray *tripImageViewArray = [NSArray arrayWithObjects:cell.tripImageView, cell.tripImageView1, cell.tripImageView2, cell.tripImageView3, cell.tripImageView4, nil];
+            int numberOfPhotosShouldPick = 5;
+            
+            if([allPhotoArray count] < 5){
+                numberOfPhotosShouldPick = [allPhotoArray count];
+            }
+            
+            for (int i = 0; i < numberOfPhotosShouldPick; i++) {
+                UIImageView *imageView = [tripImageViewArray objectAtIndex:i];
+                //imageView.image = nil;
+                PHOTO *photo = [allPhotoArray objectAtIndex:i];
+                UIImage *image = [da tranferURLtoImage:[NSURL URLWithString:photo.p_image]];
+                imageView.image = image;
+                
+            }
+            
             NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit fromDate:trip.t_startDate];
             NSString *dateString = [NSString stringWithFormat:@"%i/%i", components.year, components.month];
             cell.tripDateLabel.text = dateString;
