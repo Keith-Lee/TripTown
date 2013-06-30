@@ -311,8 +311,6 @@
             cell.tripDateLabel.text = dateString;
             cell.tripNameLabel.text = trip.t_name;
         
-            [cell.tripDateLabel setFont:[UIFont fontWithName:@"BebasNeue" size:25.0f]];
-            [cell.tripNameLabel setFont:[UIFont fontWithName:@"BebasNeue" size:25.0f]];
         }
     
         else{
@@ -341,6 +339,10 @@
             cell.tripDateLabel.text = dateString;
             cell.tripNameLabel.text = trip.t_name;
         }
+        
+        
+        [cell.tripDateLabel setFont:[UIFont fontWithName:@"BebasNeue" size:25.0f]];
+        [cell.tripNameLabel setFont:[UIFont fontWithName:@"BebasNeue" size:25.0f]];
     }
     return cell;
 }

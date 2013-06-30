@@ -455,6 +455,7 @@
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField{
     currentTextField = textField;
+    textField.clearsOnBeginEditing = NO;
     /*if(textField.frame.origin.y > 180){
         
         self.scrollView.transform = CGAffineTransformMakeTranslation(0, 180-textField.frame.origin.y);
@@ -521,5 +522,6 @@
     return im2;
     
 }
+
 
 @end
