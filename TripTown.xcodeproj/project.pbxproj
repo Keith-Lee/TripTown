@@ -56,6 +56,7 @@
 		7AB286F417429ED30043E1F0 /* AlbumCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB286F317429ED20043E1F0 /* AlbumCollectionViewController.m */; };
 		7AB286FA1742A00C0043E1F0 /* AlbumScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB286F91742A00C0043E1F0 /* AlbumScrollViewController.m */; };
 		7AB286FD1742A42A0043E1F0 /* AlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB286FC1742A42A0043E1F0 /* AlbumCollectionViewCell.m */; };
+		7AC76CD21785828A00CE92FD /* Custom Pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AC76CD11785828A00CE92FD /* Custom Pin.png */; };
 		7AD4058D1765E7180046A9A8 /* HistoryTripCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD4058C1765E7180046A9A8 /* HistoryTripCollectionHeaderView.m */; };
 		7AD4059817662CA40046A9A8 /* Icon_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD4059317662CA40046A9A8 /* Icon_1024.png */; };
 		7AD4059917662CA40046A9A8 /* Icon_512.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD4059417662CA40046A9A8 /* Icon_512.png */; };
@@ -227,6 +228,7 @@
 		7AB286F91742A00C0043E1F0 /* AlbumScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumScrollViewController.m; sourceTree = "<group>"; };
 		7AB286FB1742A42A0043E1F0 /* AlbumCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCollectionViewCell.h; sourceTree = "<group>"; };
 		7AB286FC1742A42A0043E1F0 /* AlbumCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCollectionViewCell.m; sourceTree = "<group>"; };
+		7AC76CD11785828A00CE92FD /* Custom Pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Custom Pin.png"; sourceTree = "<group>"; };
 		7AD4058B1765E7180046A9A8 /* HistoryTripCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTripCollectionHeaderView.h; sourceTree = "<group>"; };
 		7AD4058C1765E7180046A9A8 /* HistoryTripCollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTripCollectionHeaderView.m; sourceTree = "<group>"; };
 		7AD4059317662CA40046A9A8 /* Icon_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon_1024.png; path = TripTown/Icon_1024.png; sourceTree = "<group>"; };
@@ -657,6 +659,7 @@
 		CED6DE36175E03DC00440B5F /* UI images */ = {
 			isa = PBXGroup;
 			children = (
+				7AC76CD11785828A00CE92FD /* Custom Pin.png */,
 				ABA9B699174BACAA00BA2F99 /* checkBox.png */,
 				4566A683175B288C00E442F7 /* menuButton@2x.png */,
 				ABA9B69E174BACB000BA2F99 /* checkBoxMarked.png */,
@@ -827,6 +830,7 @@
 				7A5F697F177812F3006D19DC /* Location_disable_30.png in Resources */,
 				7A5F6980177812F3006D19DC /* Refresh Pin.png in Resources */,
 				7A5F6981177812F3006D19DC /* End Trip.png in Resources */,
+				7AC76CD21785828A00CE92FD /* Custom Pin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
