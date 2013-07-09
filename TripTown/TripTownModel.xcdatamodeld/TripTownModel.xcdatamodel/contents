@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="LOCATION" representedClassName="LOCATION" syncable="YES">
         <attribute name="l_latitude" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="l_longitude" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="photo" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PHOTO" inverseName="location" inverseEntity="PHOTO" syncable="YES"/>
         <relationship name="region" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="REGION" inverseName="location" inverseEntity="REGION" syncable="YES"/>
-        <relationship name="trip" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TRIP" inverseName="location" inverseEntity="TRIP" syncable="YES"/>
     </entity>
     <entity name="PHOTO" representedClassName="PHOTO" syncable="YES">
         <attribute name="p_date" optional="YES" attributeType="Date" syncable="YES"/>
@@ -23,7 +22,6 @@
         <attribute name="t_isOngoing" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="t_name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="t_startDate" optional="YES" attributeType="Date" syncable="YES"/>
-        <relationship name="location" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="LOCATION" inverseName="trip" inverseEntity="LOCATION" syncable="YES"/>
         <relationship name="region" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="REGION" inverseName="trip" inverseEntity="REGION" syncable="YES"/>
         <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="USER" inverseName="trip" inverseEntity="USER" syncable="YES"/>
     </entity>
@@ -34,10 +32,10 @@
         <relationship name="trip" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="TRIP" inverseName="user" inverseEntity="TRIP" syncable="YES"/>
     </entity>
     <elements>
-        <element name="LOCATION" positionX="34" positionY="-189" width="128" height="118"/>
+        <element name="LOCATION" positionX="34" positionY="-189" width="128" height="103"/>
         <element name="PHOTO" positionX="-180" positionY="-135" width="128" height="105"/>
         <element name="REGION" positionX="279" positionY="-148" width="128" height="88"/>
-        <element name="TRIP" positionX="27" positionY="71" width="128" height="148"/>
+        <element name="TRIP" positionX="27" positionY="71" width="128" height="133"/>
         <element name="USER" positionX="25" positionY="252" width="128" height="103"/>
     </elements>
 </model>

@@ -28,7 +28,6 @@
 		7A3CE61617869293001F3C38 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CE61517869293001F3C38 /* FacebookSDKResources.bundle */; };
 		7A42CE31176CCAF9007678D7 /* TripTown.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A42CE30176CCAF9007678D7 /* TripTown.png */; };
 		7A5F17E317324A230085D2ED /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5F17E217324A230085D2ED /* CoreLocation.framework */; };
-		7A5F17FE1732AB3B0085D2ED /* LOCATION.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5F17FD1732AB3B0085D2ED /* LOCATION.m */; };
 		7A5F180A1732AB650085D2ED /* USER.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5F18091732AB640085D2ED /* USER.m */; };
 		7A5F180D1732B3940085D2ED /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5F180C1732B3940085D2ED /* MyAnnotation.m */; };
 		7A5F6978177812F3006D19DC /* OswaldRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A5F696E177812F3006D19DC /* OswaldRegular.otf */; };
@@ -47,12 +46,13 @@
 		7A787494174421F6000F1856 /* MyAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A787493174421F6000F1856 /* MyAssetsManager.m */; };
 		7A89B637177E1C6700B99AB4 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A89B62E177E1BEF00B99AB4 /* libRestKit.a */; };
 		7A9112A11752012F00D375FB /* REGION.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9112A01752012D00D375FB /* REGION.m */; };
-		7A9112A41752014400D375FB /* TRIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9112A31752014200D375FB /* TRIP.m */; };
 		7A9112A7175213E200D375FB /* AlbumPhotoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A9112A6175213E100D375FB /* AlbumPhotoHeaderView.m */; };
 		7A91134A175A2A8000D375FB /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A911347175A2A8000D375FB /* ECSlidingViewController.m */; };
 		7A91134B175A2A8000D375FB /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A911349175A2A8000D375FB /* UIImage+ImageWithUIView.m */; };
 		7A94A789174FD889003AA95E /* CoreImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A94A788174FD889003AA95E /* CoreImageCollectionViewCell.m */; };
 		7A94A78E174FDC6A003AA95E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A94A78D174FDC6A003AA95E /* CoreImage.framework */; };
+		7AA3EDBD178C397D0023965F /* LOCATION.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA3EDBC178C397D0023965F /* LOCATION.m */; };
+		7AA3EDC0178C39850023965F /* TRIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA3EDBF178C39850023965F /* TRIP.m */; };
 		7AB286E317414C570043E1F0 /* ImageScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB286E217414C570043E1F0 /* ImageScrollViewController.m */; };
 		7AB286F417429ED30043E1F0 /* AlbumCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB286F317429ED20043E1F0 /* AlbumCollectionViewController.m */; };
 		7AB286FA1742A00C0043E1F0 /* AlbumScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB286F91742A00C0043E1F0 /* AlbumScrollViewController.m */; };
@@ -183,8 +183,6 @@
 		7A3CE61517869293001F3C38 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKResources.bundle; sourceTree = "<group>"; };
 		7A42CE30176CCAF9007678D7 /* TripTown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TripTown.png; path = TripTown/TripTown.png; sourceTree = "<group>"; };
 		7A5F17E217324A230085D2ED /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		7A5F17FC1732AB3B0085D2ED /* LOCATION.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOCATION.h; sourceTree = "<group>"; };
-		7A5F17FD1732AB3B0085D2ED /* LOCATION.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOCATION.m; sourceTree = "<group>"; };
 		7A5F18081732AB640085D2ED /* USER.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USER.h; sourceTree = "<group>"; };
 		7A5F18091732AB640085D2ED /* USER.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USER.m; sourceTree = "<group>"; };
 		7A5F180B1732B3940085D2ED /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
@@ -209,8 +207,6 @@
 		7A89B626177E1BEF00B99AB4 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
 		7A91129F1752012D00D375FB /* REGION.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REGION.h; sourceTree = "<group>"; };
 		7A9112A01752012D00D375FB /* REGION.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REGION.m; sourceTree = "<group>"; };
-		7A9112A21752014100D375FB /* TRIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRIP.h; sourceTree = "<group>"; };
-		7A9112A31752014200D375FB /* TRIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRIP.m; sourceTree = "<group>"; };
 		7A9112A5175213E100D375FB /* AlbumPhotoHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumPhotoHeaderView.h; sourceTree = "<group>"; };
 		7A9112A6175213E100D375FB /* AlbumPhotoHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumPhotoHeaderView.m; sourceTree = "<group>"; };
 		7A911346175A2A8000D375FB /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
@@ -220,6 +216,10 @@
 		7A94A787174FD889003AA95E /* CoreImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreImageCollectionViewCell.h; sourceTree = "<group>"; };
 		7A94A788174FD889003AA95E /* CoreImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreImageCollectionViewCell.m; sourceTree = "<group>"; };
 		7A94A78D174FDC6A003AA95E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		7AA3EDBB178C397D0023965F /* LOCATION.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOCATION.h; sourceTree = "<group>"; };
+		7AA3EDBC178C397D0023965F /* LOCATION.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOCATION.m; sourceTree = "<group>"; };
+		7AA3EDBE178C39850023965F /* TRIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRIP.h; sourceTree = "<group>"; };
+		7AA3EDBF178C39850023965F /* TRIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRIP.m; sourceTree = "<group>"; };
 		7AB286E117414C570043E1F0 /* ImageScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScrollViewController.h; sourceTree = "<group>"; };
 		7AB286E217414C570043E1F0 /* ImageScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageScrollViewController.m; sourceTree = "<group>"; };
 		7AB286F217429ED20043E1F0 /* AlbumCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCollectionViewController.h; sourceTree = "<group>"; };
@@ -611,16 +611,16 @@
 			isa = PBXGroup;
 			children = (
 				7AF34ABE17290C1E00DC881A /* TripTownModel.xcdatamodeld */,
-				7A9112A21752014100D375FB /* TRIP.h */,
-				7A9112A31752014200D375FB /* TRIP.m */,
+				7AA3EDBB178C397D0023965F /* LOCATION.h */,
+				7AA3EDBC178C397D0023965F /* LOCATION.m */,
+				7AA3EDBE178C39850023965F /* TRIP.h */,
+				7AA3EDBF178C39850023965F /* TRIP.m */,
 				7A91129F1752012D00D375FB /* REGION.h */,
 				7A9112A01752012D00D375FB /* REGION.m */,
 				7A0CC274173A2A0E000FC2B2 /* PHOTO.h */,
 				7A0CC275173A2A0E000FC2B2 /* PHOTO.m */,
 				7A5F18081732AB640085D2ED /* USER.h */,
 				7A5F18091732AB640085D2ED /* USER.m */,
-				7A5F17FC1732AB3B0085D2ED /* LOCATION.h */,
-				7A5F17FD1732AB3B0085D2ED /* LOCATION.m */,
 				7AF34B391731693C00DC881A /* DataModel.h */,
 				7AF34B3A1731693C00DC881A /* DataModel.m */,
 			);
@@ -853,7 +853,6 @@
 				7AF34AC017290C1E00DC881A /* TripTownModel.xcdatamodeld in Sources */,
 				7AF34B37173166FD00DC881A /* DataAccess.m in Sources */,
 				7AF34B3B1731693C00DC881A /* DataModel.m in Sources */,
-				7A5F17FE1732AB3B0085D2ED /* LOCATION.m in Sources */,
 				7A5F180A1732AB650085D2ED /* USER.m in Sources */,
 				7A5F180D1732B3940085D2ED /* MyAnnotation.m in Sources */,
 				7A0CC276173A2A0E000FC2B2 /* PHOTO.m in Sources */,
@@ -870,7 +869,6 @@
 				CEA6B61B174F41A8009982D6 /* CheckLoginViewController.m in Sources */,
 				7A94A789174FD889003AA95E /* CoreImageCollectionViewCell.m in Sources */,
 				7A9112A11752012F00D375FB /* REGION.m in Sources */,
-				7A9112A41752014400D375FB /* TRIP.m in Sources */,
 				7A9112A7175213E200D375FB /* AlbumPhotoHeaderView.m in Sources */,
 				7A91134A175A2A8000D375FB /* ECSlidingViewController.m in Sources */,
 				7A91134B175A2A8000D375FB /* UIImage+ImageWithUIView.m in Sources */,
@@ -880,6 +878,8 @@
 				7AD4058D1765E7180046A9A8 /* HistoryTripCollectionHeaderView.m in Sources */,
 				7A6F666717707AF8000F4B38 /* UICustomActionSheet.m in Sources */,
 				7A6A008F177C8D7300261DC1 /* Reachability.m in Sources */,
+				7AA3EDBD178C397D0023965F /* LOCATION.m in Sources */,
+				7AA3EDC0178C39850023965F /* TRIP.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

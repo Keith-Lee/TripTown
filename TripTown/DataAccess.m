@@ -241,7 +241,6 @@
     //NSLog(@"mappointis %@, %@", newLocation.l_latitude, newLocation.l_longitude);
     
     
-    [self.theTrip addLocationObject:newLocation];
     [self.theRegion addLocationObject:newLocation];
     
     NSError *error = nil;
@@ -260,7 +259,7 @@
 -(LOCATION *)fetchLocationWithLatitude:(NSString *)latitude andLongitude:(NSString *)longitude inTrip:(TRIP *)trip{
     appDelegate = [[UIApplication sharedApplication]delegate];
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"l_latitude == %@ and l_longitude == %@ and trip.t_name == %@", latitude, longitude, trip.t_name];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"l_latitude == %@ and l_longitude == %@ and region.trip.t_name == %@", latitude, longitude, trip.t_name];
     
     //NSLog(@"fetch side predicate is %@", [predicate description]);
     NSFetchRequest *request = [[NSFetchRequest alloc]initWithEntityName:@"LOCATION"];
@@ -283,11 +282,11 @@
     appDelegate = [[UIApplication sharedApplication]delegate];
     
     //取得所有該tripName的Location
-    NSPredicate *predicate =[NSPredicate predicateWithFormat:@"trip.t_name == %@", tripName];
+    NSPredicate *predicate =[NSPredicate predicateWithFormat:@"region.trip.t_name == %@", tripName];
     //NSLog(@"predicate trip name is %@",tripName);
     NSFetchRequest *request = [[NSFetchRequest alloc]initWithEntityName:@"LOCATION"];
     [request setPredicate:predicate];
-    
+
     NSError *error = nil;
     NSArray *array = [[appDelegate managedObjectContext] executeFetchRequest:request error:&error];
     
@@ -304,7 +303,7 @@
 -(BOOL)isLocationWithLatitude:(NSString *)latitude andLongitude:(NSString *)longitude ExistInTripWithTripName:(NSString *)tripName{
     appDelegate = [[UIApplication sharedApplication] delegate];
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"l_latitude == %@ and l_longitude == %@ and trip.t_name == %@", latitude, longitude, tripName];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"l_latitude == %@ and l_longitude == %@ and region.trip.t_name == %@", latitude, longitude, tripName];
     NSFetchRequest *request = [[NSFetchRequest alloc]initWithEntityName:@"LOCATION"];
     [request setPredicate:predicate];
     
@@ -353,7 +352,7 @@
 
 -(NSArray *)getAllPhotoForTrip:(TRIP *)trip{
     appDelegate = [[UIApplication sharedApplication]delegate];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"location.trip.t_name == %@", trip.t_name];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"location.region.trip.t_name == %@", trip.t_name];
     NSFetchRequest *request = [[NSFetchRequest alloc]initWithEntityName:@"PHOTO"];
     [request setPredicate:predicate];
     
@@ -405,32 +404,6 @@
     
 }
 
-/*- (NSArray *)getAllPhotoForRegion:(REGION *)region inTrip:(TRIP *)trip{
-    appDelegate = [[UIApplication sharedApplication]delegate];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"location.region.trip.t_name == %@ && location.region.r_name == %@", trip.t_name, region.r_name];
-    NSFetchRequest *request = [[NSFetchRequest alloc]initWithEntityName:@"PHOTO"];
-    [request setPredicate:predicate];
-    
-    NSError *error = nil;
-    NSArray *array = [[appDelegate managedObjectContext]executeFetchRequest:request error: &error];
-    
-    if([array count] == 0){
-        NSLog(@"(DataAccess)Cannot find any PHOTO in REGION");
-        return  nil;
-    }
-    else{
-        return array;
-    }
-    
-}
-
-
-- (NSArray *)getAllPhotoImageForRegion:(REGION *)region inTrip:(TRIP *)trip{
-    
-    appDelegate = [[UIApplication sharedApplication]delegate];
-    
-}*/
-
 
 
 - (UIImage *)tranferURLtoImage:(NSURL *)url{
@@ -471,7 +444,7 @@
 //傳回一個PHOTO類別的array
 -(NSArray *)getAllPhotoFromLocation:(LOCATION *)location inTrip:(TRIP *)trip{
     appDelegate = [[UIApplication sharedApplication]delegate];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"location.l_latitude == %@ and location.l_longitude == %@ and location.trip.t_name == %@", location.l_latitude, location.l_longitude, trip.t_name];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"location.l_latitude == %@ and location.l_longitude == %@ and location.region.trip.t_name == %@", location.l_latitude, location.l_longitude, trip.t_name];
     NSFetchRequest *request = [[NSFetchRequest alloc]initWithEntityName:@"PHOTO"];
     [request setPredicate:predicate];
     
@@ -484,6 +457,7 @@
         return nil;
     }
 }
+
 
 //傳回一個image的array
 - (NSArray *)getAllPhotoImageFromLocation:(LOCATION *)location inTrip:(TRIP *)trip{

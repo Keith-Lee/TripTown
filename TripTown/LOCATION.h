@@ -2,14 +2,14 @@
 //  LOCATION.h
 //  TripTown
 //
-//  Created by 李 國揚 on 13/5/2.
+//  Created by 李 國揚 on 13/7/9.
 //  Copyright (c) 2013年 李 國揚. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class PHOTO, REGION, TRIP;
+@class PHOTO, REGION;
 
 @interface LOCATION : NSManagedObject
 
@@ -17,7 +17,6 @@
 @property (nonatomic, retain) NSString * l_longitude;
 @property (nonatomic, retain) NSSet *photo;
 @property (nonatomic, retain) REGION *region;
-@property (nonatomic, retain) TRIP *trip;
 @end
 
 @interface LOCATION (CoreDataGeneratedAccessors)

@@ -55,8 +55,6 @@
 - (void) createPhotoWithDate: (NSDate *)date WithImageReference: (NSString *)reference andDescription: (NSString *)description;
 - (NSArray *) getAllPhotoForTrip: (TRIP *)trip;
 - (NSArray *) getAllPhotoImageForTrip: (TRIP *)trip;
-//- (NSArray *) getAllPhotoForRegion: (REGION *)region inTrip: (TRIP *)trip;
-//- (NSArray *) getAllPhotoImageForRegion: (REGION *)region inTrip: (TRIP *)trip;
 - (NSArray *) getAllPhotoFromLocation: (LOCATION *)location inTrip: (TRIP *)trip;
 - (NSArray *) getAllPhotoImageFromLocation: (LOCATION *)location inTrip: (TRIP *)trip;
 - (UIImage *) tranferURLtoImage: (NSURL *)url;
